@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "48c1ef94-f115-4f95-aed3-f9797ab5a497",
+		"name": "micro_t10sinAuth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "39071642"
+	},
+	"item": [
+		{
+			"name": "Get All",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "admin123",
+						"username": "adminUser"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:9000/all"
+			},
+			"response": []
+		},
+		{
+			"name": "Get por ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "adminpassword",
+						"username": "admin"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:9000/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Post",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "adminUser",
+						"password": "admin123"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Antoineeee\",\r\n    \"apellidos\": \"Guevara H.\",\r\n    \"salario\": 99999.0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:9000/create"
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"username": "adminUser",
+						"password": "admin123"
+					}
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"5\",\r\n    \"nombre\": \"Nieri\",\r\n    \"apellidos\": \"Guevara H.\",\r\n    \"salario\": 99999.0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:9000/5"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete por ID",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "adminpassword",
+						"username": "admin"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Antoineeee\",\r\n    \"apellidos\": \"Guevara H.\",\r\n    \"salario\": 99999.0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:9000/1"
+			},
+			"response": []
+		}
+	]
+}
