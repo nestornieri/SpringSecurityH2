@@ -1,6 +1,6 @@
 spring:
   application:
-    name: SERVICIO-INSTRUCTOR
+    name: TEMA10-MICRO
 server:
   port: 9000
 eureka:
